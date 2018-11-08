@@ -61,11 +61,11 @@ for filename in files_grabbed:
       
       #prepare the new_name for renaming
       new_name = new_name.replace(key, dictionary[key])
-   #rename the file
-   os.rename(filename, new_name)
    
    #print result if renamer has renamed any file
    if (filename != new_name):
-      print("Renamed: \n" + filename + "\n to: \n" + new_name + "\n")
+   	#rename the file
+   	os.rename(filename, new_name)
+   	print("Renamed: \n" + filename + "\n to: \n" + new_name + "\n")
       
 sys.exit("End: GuGuRenamer Execution Completed")
