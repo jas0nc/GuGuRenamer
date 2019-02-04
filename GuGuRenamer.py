@@ -32,6 +32,7 @@ files_grabbed = []
 for files in types:
     files_grabbed.extend(glob.glob( path + files))
     files_grabbed.extend(glob.glob( path + "**/" + files))
+    files_grabbed.extend(glob.glob( path + "/**/**/" + files))
 files_grabbed   # the list of pdf and cpp files
 #print(files_grabbed) #for debug use
 #sys.exit("Stop for Debug")
